@@ -2,91 +2,81 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initital-scale=1.0"/>
-        <title>Document</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Моя первая HTML-страница</title>
     </head>
 
     <body>
         <header>
     
-         <nav>
-            <a href="./index.html">WebStudio </a>
-            <ul>
-                <li>
-                    <a href=" ">Studio</a></li>
-                <li> 
-                   <a href="">Portfolio</a></li>
-                <li>
-                    <a href="">Contacts</a></li>
-            </ul>
-         </nav>
-         <address>
-            <ul>
-                <li>
-                    <a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                    <li>
-                        <a href="tel:+110001111111">+11 (000) 111-11-11</a></li>
-            </ul> 
-         </address>
-         
+        <!-- 
+          Посилання на зовнішній ресурс, відкриється на поточній вкладці 
+        -->
+        <a href="https://goit.global/">GoIT</a>
+        <!-- 
+          Посилання на зовнішній ресурс, відкриється на новій вкладці 
+        -->
+        <a href="https://goit.global/" target="_blank"> GoIT</a>
+
+        <address
+            mango@mail.pig <br/>
+            (111) 222-22-33 <br/>
+            <a href="tel:+3809518900">+(380) 951-89-00</a> <br/>
+            <a href="mailto:example@mail.pig">example@mail.pig</a> <br/>
+            <a href="/шлях/до/cv.pdf" download="cat-resume">Завантажити резюме</a>
+        </address>
+
+        <ul>
+            <li> <a href="#about">About</a></li>
+            <li> <a href="#features">Features</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+        </ul> 
         </header>
         
         <main>
             <!--Секція 1-->
             <section>
-                <h1>Effective Solutions for Your Business</h1>
+                <h1>Dental clinic website</h1>
                 <button type="button">Order Service</button>
             </section>
 
             <!--Секція 2-->
             <section>
-                <h2>Tittle</h2>
-                <ul>
-                    <li>
-                    <h3>Strategy</h3>
-                    <p>Our goal is to identify the business
-                    problem to walk away with the perfect and creative solution.</p></li>
-                    <li>
-                        <h3>Punctuality</h3>
-                        <p>Bring the key message to the brand's audience for the best price within the shortest possible time.</p>
-                    </li>
-                    <li>
-                        <h3>Diligence</h3>
-                        <p>Research and confirm brands that present the strongest digital growth opportunities and minimize risk.</p>
-                    </li>
-                    <li>
-                        <h3>Technologies</h3>
-                        <p>Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>
-                    </li>
-                </ul>
+                <h2 id="about">About</h2>
+                <ol>
+                    <li>Закип'яти воду</li>
+                    <li>Засип чай у чашку</li>
+                    <li>Налий в чашку окропу</li>
+                    <li> Зачекай 10 хвилин, після чого можна пити</li>
+                </ol>
             </section>
            
             <!--Секція 3-->
             <section>
-                <h2>Our Team</h2>
-                <ul>
-                    <li>
-                        <img src="./images/img1.jpg" alt="man with a thick beard in a shirt on a white background "
-                        width="264"/>
-                        <h3>Mark Guerrero</h3>
-                        <p>Product Designer</p>
-                    </li>
-                    <li>
-                        <img src="./images/img2.jpg" alt="smiling man in a blue shirt" width="264"/>
-                        <h3>Tom Ford</h3>
-                        <p>Frontend Developer</p>
-                    </li>
-                    <li>
-                        <img src="./images/img3.jpg" alt="girl in a pink sweater" width="264"/>
-                        <h3>Camila Garcia</h3>
-                        <p>Marketing</p>
-                    </li>
-                    <li>
-                        <img src="./images/img4.jpg" alt="smiling man in a gray t-shirt" width="264"/>
-                        <h3>Daniel Wilson</h3>
-                        <p>UI Designer</p>
-                    </li>
-                </ul>
+              <a href="https://www.pexels.com/photo/animals-sweet-cat-kitty-57416/" target="_blank">
+                <img src="https://images.pexels.com/photos/57416/cat-sweet-kitty-animals-57416.jpeg?w=640" 
+                     alt="Рудий кіт"
+                     width="640">
+                 
+              </a>
+
+              <h2 id="features">Features</h2>
+
+              <h2 id="team">Team</h2>
+
+              <h2 id="reviews">Reviews</h2>
+
+              <div>
+                <p>Всі права захищені &copy; Lex, 2020</p>
+                <p>Всі права захищені &#169; Lex, 2020</p>
+                <p>Всі права захищені &#xa9; Lex, 2020</p>
+            </div>
+
+            <p>Для полужирного тексту, виділіть його тегами <strong> і </strong>.</p>
+
+            <p>Для полужирного тексту, виділіть його тегами &lt;strong&gt; і &lt;/strong&gt;.</p>
+
             </section>
 
         </main>
@@ -99,3 +89,4 @@
     </body>
 
 </html>
+
