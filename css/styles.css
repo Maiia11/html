@@ -1,0 +1,74 @@
+body {
+    font-family: 'Tangerine', cursive;
+    color: #2a2a2a;
+    background-color: #fafafa;
+    line-height: 1.5;
+    font-size: 20px;
+    text-decoration: line-through;
+}
+
+#about{
+    font-weight: 500;
+    color: orange;
+}
+
+a{
+    color: tomato;
+    text-decoration: none;
+    text-decoration: underline;
+}
+
+a{
+    color:yellowgreen;
+}
+
+a:hover{
+    color: rosybrown;
+}
+
+a:active{
+    color: turquoise;
+}
+
+a:focus{
+    color:yellow;
+}
+
+address a{
+    color: teal;
+    text-transform: uppercase;
+}
+
+address a:hover{
+    color: royalblue;
+}
+
+.social-links li{
+    color: rebeccapurple;
+}
+
+.menu > li{
+    border: 1px solid red;
+}
+
+.post {
+    color: rgba(rgb(222, 22, 22), rgb(41, 194, 41), rgb(60, 60, 63), alpha);
+    text-align: center;
+    letter-spacing: 10px;
+    line-height: 1.5;
+    text-indent: 30px;
+    text-shadow: 10px 3px 5px indianred;
+}
+
+.post-link {
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.highlight{
+    color: red;
+    font-weight: 500;
+}
