@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Tangerine', cursive;
     color: #2a2a2a;
@@ -7,9 +13,33 @@ body {
     text-decoration: line-through;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
 #about{
     font-weight: 500;
     color: orange;
+    margin: 0 auto;
 }
 
 a{
@@ -58,10 +88,22 @@ address a:hover{
     line-height: 1.5;
     text-indent: 30px;
     text-shadow: 10px 3px 5px indianred;
+   
 }
 
 .post-link {
-    color: inherit;
+display: inline-block;
+    padding: 16px 32px;
+
+    border-radius: 3px;
+    background-color: teal;
+    color: white;
+
+    font-family: sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
 }
 
 ul {
@@ -71,4 +113,26 @@ ul {
 .highlight{
     color: red;
     font-weight: 500;
+    border-top: 3px solid blue;
+    border-right: 5px dotted black;
+    border-bottom: 7px dashed palevioletred;
+    border-left: 9px double green;
+    border-top-left-radius: 50%;
+    overflow: auto; 
+    
+}
+
+.highlight:hover{
+    border-color: indigo;
+}
+
+.parent {
+    background-color: #3f51b5;
+}
+
+.child {
+    max-width: 220px;
+    margin: 0 auto;
+    background-color: #4caf50;
+    text-align: center;
 }
