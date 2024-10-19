@@ -9,8 +9,8 @@ body {
     color: #2a2a2a;
     background-color: #fafafa;
     line-height: 1.5;
-    font-size: 20px;
-    text-decoration: line-through;
+    font-size: 36px;
+    
 }
 
 h1,
@@ -34,12 +34,33 @@ ol {
 img {
     display: block;
     max-width: 100%;
+    object-fit: contain;
+    position: absolute;
+    top: 50px;
+}
+
+.cont-img{
+    width: 360px;
+    height: 300px;
+    
+}
+.fixed{
+     position: fixed;
+right: 30px;
+    bottom: 30px;
+
+}
+.section{
+    position: relative;
+    top: 50px;
+    left: 50px;
 }
 
 #about{
     font-weight: 500;
     color: orange;
     margin: 0 auto;
+
 }
 
 a{
@@ -67,6 +88,7 @@ a:focus{
 address a{
     color: teal;
     text-transform: uppercase;
+    
 }
 
 address a:hover{
@@ -75,14 +97,16 @@ address a:hover{
 
 .social-links li{
     color: rebeccapurple;
+    display: inline-block;
 }
 
 .menu > li{
     border: 1px solid red;
+    display: inline;
 }
 
 .post {
-    color: rgba(rgb(222, 22, 22), rgb(41, 194, 41), rgb(60, 60, 63), alpha);
+    color: rgba(rgb 222, 22, 22);
     text-align: center;
     letter-spacing: 10px;
     line-height: 1.5;
@@ -119,6 +143,9 @@ ul {
     border-left: 9px double green;
     border-top-left-radius: 50%;
     overflow: auto; 
+    background-image: url('../images/img1.jpg');
+    background-position: 50% 50%;
+    box-shadow: inset 10px 10px 8px 2px rgba(227, 205, 4, 0.3);
     
 }
 
@@ -128,6 +155,7 @@ ul {
 
 .parent {
     background-color: #3f51b5;
+     background-color: olivedrab;
 }
 
 .child {
@@ -136,3 +164,106 @@ ul {
     background-color: #4caf50;
     text-align: center;
 }
+
+.card {
+  display: flex;
+  gap: 10px;
+  width: 300px;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+   background-image: url("https://cdn-icons-png.flaticon.com/512/616/616438.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: orangered; 
+transition: transform 150ms ease-in-out;
+}
+
+.icon:hover{
+    transform: translateY(110px);
+}
+
+.icon::before{
+    content: "translateY(110px)";
+}
+
+.list-item:nth-child(2n) {
+  background-color: orange;
+}
+
+.list-item:nth-child(2n +1){
+    background-color: olive;
+}
+
+.paragraf{
+    min-width: 100px;
+    max-width: 500px;
+    padding: 30px;
+}
+
+.list{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+height: 100px;
+    
+}
+
+.list-item{
+    flex-basis: 75px;
+}
+
+.list-item:last-child{
+    flex-grow: 6;
+    align-self: first baseline;
+}
+
+.box::before {
+    content: 'Цей текст у before';
+    color: orange;
+}
+
+.box::after {
+    content: 'Цей текст у after';
+    color: teal;
+}
+
+.box::before,
+.box::after {
+    font-size: 30px;
+}
+
+.box:hover::before {
+    background-color: green;
+}
+
+
+.box:hover::after {
+    background-color: tomato;
+}
+
+
+.btn{
+background-color: orangered;
+transition-property: background-color, transform;
+transition-duration: 500ms;
+transition-timing-function: linear;
+ transition-delay: 250ms
+}
+
+.btn:hover{
+background-color: orchid;
+transform: rotate(180deg);
+
+}
+
+.post-link:hover{
+    transform: scale(1.5);
+}
+
